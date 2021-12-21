@@ -47,7 +47,7 @@ p {
 }
 
 .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .site {
@@ -181,4 +181,10 @@ p {
 .input-bar {
     margin-left: 25%;
     margin-right: 25%;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-link-headers{
+        display: none;
+    }
 }
