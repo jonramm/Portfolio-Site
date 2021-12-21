@@ -183,6 +183,34 @@ p {
     margin-right: 25%;
 }
 
+/* Game Page */
+
+.game-container {
+    padding: 7% 5%;
+}
+
+#game {
+    background-color: rgba(153, 205, 50, 0.125);
+    text-align: center;
+    height: fit-content;
+    flex: 1 0 auto;
+}
+
+.note-box {
+    height: 80px;
+    width: 80px;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 20%;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+
 @media screen and (max-width: 600px) {
     .title-background {
         display: none;
