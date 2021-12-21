@@ -19,11 +19,10 @@ function buttonCheck(button) {
         break;
 
         case "3":
-            if ($("#major").prop("checked")) {
-                const d = new Audio('../sounds/d.mp3');
-            } else {
-                const d = new Audio('../sounds/dFlat.mp3');
-            }           
+            let d = new Audio('../sounds/d.mp3');
+            if ($("#minor").prop("checked")) {
+                d = new Audio('../sounds/dFlat.mp3');
+            }         
             d.play();
         break;
 
@@ -65,6 +64,7 @@ document.addEventListener("keydown", (event) => {
         buttonAnimation(event.key)
     } 
     catch(err) {
+        console.log(err)
     }    
 });
 
@@ -82,7 +82,9 @@ document.addEventListener("click", (event) => {
 
 
 function buttonAnimation(currentKey) {
+    console.log(currentKey)
     const activeBtn = document.querySelector(".note-" + currentKey); 
+    console.log(activeBtn)
     activeBtn.classList.add("pressed");
     setTimeout(() => activeBtn.classList.toggle("pressed"), 200);
 }
