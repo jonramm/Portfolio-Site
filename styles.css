@@ -197,19 +197,28 @@ p {
 }
 
 .note-box {
-    height: 80px;
-    width: 80px;
-    background-color: gray;
+    background-color: rgb(212, 212, 212);
     border: 2px solid black;
     border-radius: 20%;
     font-size: 2rem;
     font-weight: bolder;
+    margin: 0;
 }
 
 .pressed {
-    box-shadow: 0 3px 4px 0 #DBEDF3;
-    opacity: 0.5;
+    background-color: greenyellow;
   }
+
+.key-img {
+    height: 50%;
+    width: auto;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.key-col {
+    width: auto;
+}
 
 @media screen and (max-width: 600px) {
     .title-background {
