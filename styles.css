@@ -9,8 +9,13 @@ body {
 }
 
 h2 {
-    font-weight: bold;
+    font-family: 'Archivo Black';
     padding-bottom: 30px;
+}
+
+h3 {
+    padding-bottom: 30px;
+    font-weight: bold;
 }
 
 p {
@@ -80,6 +85,7 @@ p {
     background-color: rgba(153, 205, 50, 0.125);
     text-align: center;
 }
+
 
 .home-row {
     padding-bottom: 7%;
