@@ -184,7 +184,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-    .nav-link-headers{
+    .title-background {
         display: none;
     }
 }
