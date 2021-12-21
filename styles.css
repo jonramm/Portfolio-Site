@@ -205,6 +205,10 @@ p {
     margin: 0;
 }
 
+.notes-container {
+    display: none;
+}
+
 .pressed {
     background-color: greenyellow;
   }
@@ -218,6 +222,14 @@ p {
 
 .key-col {
     width: auto;
+}
+
+.col-content {
+    padding: 10%;
+}
+
+#scoreBox {
+    visibility: hidden;
 }
 
 @media screen and (max-width: 600px) {

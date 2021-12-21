@@ -19,7 +19,11 @@ function buttonCheck(button) {
         break;
 
         case "3":
-            const d = new Audio('../sounds/d.mp3');
+            if ($("#major").prop("checked")) {
+                const d = new Audio('../sounds/d.mp3');
+            } else {
+                const d = new Audio('../sounds/dFlat.mp3');
+            }           
             d.play();
         break;
 
@@ -39,7 +43,11 @@ function buttonCheck(button) {
         break;
 
         case "7":
-            const a = new Audio('../sounds/a.mp3');
+            if ($("#major").prop("checked")) {
+                const a = new Audio('../sounds/a.mp3');
+            } else {
+                const a = new Audio('../sounds/aFlat.mp3');
+            }
             a.play();
         break;
 
@@ -52,12 +60,44 @@ function buttonCheck(button) {
 }}
 
 document.addEventListener("keydown", (event) => {
-    buttonCheck(event.key);
-    buttonAnimation(event.key)
+    try {
+        buttonCheck(event.key);
+        buttonAnimation(event.key)
+    } 
+    catch(err) {
+    }    
 });
+
+document.addEventListener("click", (event) => {
+    try {
+        const classString = event.path[0].classList.value
+        const button = classString[classString.length-1]
+        buttonCheck(button);
+        buttonAnimation(button)
+    }
+    catch(err) {
+    }
+});
+
+
 
 function buttonAnimation(currentKey) {
     const activeBtn = document.querySelector(".note-" + currentKey); 
     activeBtn.classList.add("pressed");
     setTimeout(() => activeBtn.classList.toggle("pressed"), 200);
 }
+
+$("#free").click(() => {
+    $(".notes-container").css("display", "inline-block");
+    $("#boneHeader").text("Play your horn, man")
+})
+
+$("#major").change(() => {
+    $(".note-3").text("D")
+    $(".note-7").text("A")
+})
+
+$("#minor").change(() => {
+    $(".note-3").text("Db")
+    $(".note-7").text("Ab")
+})
