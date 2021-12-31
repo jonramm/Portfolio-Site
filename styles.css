@@ -100,13 +100,16 @@ p {
     height: 100%;
 }
 
+.home-container {
+    padding: 7% 0 7%;
+}
 
-.home-row {
+.col-item {
     padding-bottom: 7%;
 }
 
-.home-container {
-    padding: 7% 0 7%;
+.bio {
+    font-size: 1.2rem;;
 }
 
 iframe {
@@ -143,7 +146,7 @@ iframe {
 }
 
 .hangman {
-    width: 75%;
+    width: 80%;
 }
 
 .hangman-container {
