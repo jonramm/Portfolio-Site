@@ -181,6 +181,11 @@ iframe {
     padding: 4% 0 7%;
 }
 
+.resume-img {
+    height: auto;
+    width: 50%;
+}
+
 /* Contact */
 
 #contact {
@@ -254,7 +259,18 @@ iframe {
         display: none;
     }
     iframe {
-        width: 300px;
-        height: 200px;
+        width: 280px;
+        height: 157px;
+    }
+    .resume-img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    iframe {
+        width: 420px;
+        height: 236px;
     }
 }
