@@ -149,8 +149,12 @@ iframe {
     width: 80%;
 }
 
-.hangman-container {
+.project-container {
     padding-top: 15%;
+}
+
+.project-img {
+    width: 80%;
 }
 
 .github-link {
