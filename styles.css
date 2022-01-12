@@ -145,6 +145,11 @@ iframe {
     flex: 1 0 auto;
 }
 
+.hophub-image {
+    width: 450px;
+    height: auto;
+}
+
 .hangman {
     width: 80%;
 }
