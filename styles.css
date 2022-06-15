@@ -172,8 +172,13 @@ iframe {
     width: 80%;
 }
 
+.project-description {
+    font-size: 1em;
+}
+
 .github-link {
     padding-top: 5%;
+    font-size: 1.2em;
 }
 
 .bookeater-gif {
