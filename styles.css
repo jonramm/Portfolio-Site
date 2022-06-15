@@ -150,6 +150,16 @@ iframe {
     height: auto;
 }
 
+.bookeater-image {
+    width: 250px;
+    height: auto;
+}
+
+.showboat-image {
+    width: 480px;
+    height: auto;
+}
+
 .hangman {
     width: 80%;
 }
