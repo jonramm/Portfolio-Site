@@ -86,6 +86,10 @@ p {
     text-align: center;
 }
 
+.home-row {
+    display: flex;
+}
+
 .wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -148,15 +152,16 @@ iframe {
 .hophub-image {
     width: 450px;
     height: auto;
+    margin: 40px 0 40px 0;
 }
 
 .bookeater-image {
-    width: 250px;
+    width: 300px;
     height: auto;
 }
 
 .showboat-image {
-    width: 480px;
+    width: 440px;
     height: auto;
 }
 
