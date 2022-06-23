@@ -28,13 +28,13 @@
 <body>
     <section id="title">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand site" href="./index.html">jonramm.com</a>
+            <!-- <a class="navbar-brand site" href="./index.html">jonramm.com</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse links" id="collapseLinks">
-                <ul class="navbar-nav ms-auto nav-link-headers">
+                <ul class="navbar-nav nav-link-headers">
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">HOME</a>
                     </li>
@@ -68,55 +68,58 @@
 
         </nav>
             <div class="title-background" id="background-image">
-
+                <div class="name-container">
+                    <h1>Jon Ramm</h1>
+                    <h2>Developer & Musician</h2>
+                </div>
             </div>
 
     </section>
 
     <section id="home-content">
-        <div class="container home-container">
-            <div class="row home-row">
-                <div class="col-lg-6 col-item">
-                    <h2 class="header">A musician and fledgling programmer, embracing life's eternal adventure.</h2>
-                    <p class="bio">
-                        A professional musician for over a decade, Jon has been everywhere. From Portland, OR to
-                        New Orleans, LA, bars and clubs to SNL and The Grammys, swamps and magnolias to high desert
-                        and juniper. Though music is still his passion, he took a long, hard look at the pandemic
-                        and decided to study computer science in an effort to future-proof his life. His gaze is 
-                        fixed on the intersection of art and technology, forging a path through a constantly changing
-                        world.
-                        
-                    </p>
-                </div>
-                <div class="col-lg-6 col-item">
-                    <h3>BookEater</h3>
-                        <p class="project-description">React web app with a MySQL database for book journaling. Allows users to create a unique account, keep track of books they've read, and store their thoughts on each one.</p>
-                        <img class="bookeater-image" src="./images/bookeater-gif.gif" alt="">
-                        <h3 class="github-link"><a class="github-link" href=" target="_blank">Click here for Github repository</a> and <a class="github-link" href="https://www.bookeater.org" target="_blank">here for the site</a></h3>
-                </div>
+        <div class="home-container">
+            
+            <div class="about-me home-section-container">
+
+                <p class="about-me-text"> Current computer science student with an excellent 
+                    aptitude for programming seeking full-time work or internship. Looking 
+                    for a challenging environment to get practical experience in the field 
+                    and develop my skills as a programmer in a team setting. I'm currently 
+                    working primarily with Python and JavaScript.
+                </p>
+                <p class="about-me-text">
+                    My big side project is a website called BookEater that allows unique 
+                    users to create an account and keep track of books they've read. Users 
+                    can write journal entries and decide how books 'taste' by choosing from 
+                    a wide variety of illustrations depicting flavors and feelings. Implemented 
+                    as a React SPA with a Node.js/Express/MySQL backend. Other projects include 
+                    two hackathon entries, a Python/Flask desktop app for searching band tour 
+                    dates, and a Python command line Hangman game.
+                </p>  
+                <p class="about-me-text">
+                    I was a successful professional musician in Portland, OR and New Orleans, LA 
+                    from 2010 to 2021 but Covid-19 has caused me to shift my focus and pursue
+                    a career in computer science. I look forward to having two passions in my 
+                    life!
+                </p>
             </div>
-            <div class="row home-row">
-                <div class="col-lg-6 col-item">
-                    <h3>With Sturgill Simpson on SNL</h3>
-                    <iframe class="video" src="https://www.youtube.com/embed/pnDALxS7l_0" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>   
-                <div class="col-lg-6 col-item">
-                    <h3>Bagworm - Snotty Nose</h3>
-                    <iframe class="video" src="https://www.youtube.com/embed/jQYp6cbZhfw" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>   
+
+            <div class="home-section-header">
+                <h1>PORTFOLIO</h1>
             </div>
-            <div class="container">
-                <div class="row more-links">
-                    <div class="col-lg-6">
-                        <h3><a href="./pages/projects.html">More Projects here!</a></h3>
+
+            <div class="portfolio home-section-container">
+                <div class="portfolio-project-container">
+                    <div class="portfolio-project-row">
+                        <div>
+                            <img class="portfolio-gif" src="./images/bookeater-demo.gif" />
+                        </div>
+                        <div>
+                            <h1><a href="https://www.bookeater.org" target="_blank">BookEater</a></h1>
+                            <p>React SPA with a Node.js/Express/MySQL backend for keeping track of books you've read (eaten).</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h3><a href="./pages/music.html">More Music Here!</a></h3>
-                    </div>
+
                 </div>
             </div>
             
