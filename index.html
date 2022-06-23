@@ -28,13 +28,13 @@
 <body>
     <section id="title">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand site" href="./index.html">jonramm.com</a>
+            <!-- <a class="navbar-brand site" href="./index.html">jonramm.com</a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse links" id="collapseLinks">
-                <ul class="navbar-nav ms-auto nav-link-headers">
+                <ul class="navbar-nav nav-link-headers">
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">HOME</a>
                     </li>
@@ -63,60 +63,155 @@
                             <i class="fab fa-github fa-lg"></i>
                         </a>
                     </li>
+                    <li class="nav-item icons">
+                        <a class="nav-link" href="https://www.linkedin.com/in/jon-ramm/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
 
         </nav>
             <div class="title-background" id="background-image">
-
+                <div class="name-container">
+                    <h1>Jon Ramm</h1>
+                    <h2>Developer & Musician</h2>
+                </div>
             </div>
 
     </section>
 
     <section id="home-content">
-        <div class="container home-container">
-            <div class="row home-row">
-                <div class="col-lg-6 col-item">
-                    <h2 class="header">A musician and fledgling programmer, embracing life's eternal adventure.</h2>
-                    <p class="bio">
-                        A professional musician for over a decade, Jon has been everywhere. From Portland, OR to
-                        New Orleans, LA, bars and clubs to SNL and The Grammys, swamps and magnolias to high desert
-                        and juniper. Though music is still his passion, he took a long, hard look at the pandemic
-                        and decided to study computer science in an effort to future-proof his life. His gaze is 
-                        fixed on the intersection of art and technology, forging a path through a constantly changing
-                        world.
-                        
-                    </p>
-                </div>
-                <div class="col-lg-6 col-item">
-                    <h3>BookEater</h3>
-                        <p class="project-description">React web app with a MySQL database for book journaling. Allows users to create a unique account, keep track of books they've read, and store their thoughts on each one.</p>
-                        <img class="bookeater-image" src="./images/bookeater-gif.gif" alt="">
-                        <h3 class="github-link"><a class="github-link" href=" target="_blank">Click here for Github repository</a> and <a class="github-link" href="https://www.bookeater.org" target="_blank">here for the site</a></h3>
-                </div>
+        <div class="home-container">
+            
+            <div class="about-me home-section-container">
+
+                <p class="about-me-text"> Current computer science student with an excellent 
+                    aptitude for programming seeking full-time work or internship. Looking 
+                    for a challenging environment to get practical experience in the field 
+                    and develop my skills as a programmer in a team setting. I'm currently 
+                    working primarily with Python and JavaScript.
+                </p>
+                <p class="about-me-text">
+                    My big side project is a website called BookEater that allows unique 
+                    users to create an account and keep track of books they've read. Users 
+                    can write journal entries and decide how books 'taste' by choosing from 
+                    a wide variety of illustrations depicting flavors and feelings. Implemented 
+                    as a React SPA with a Node.js/Express/MySQL backend. Other projects include 
+                    two hackathon entries, a Python/Flask desktop app for searching band tour 
+                    dates, and a Python command line Hangman game.
+                </p>  
+                <p class="about-me-text">
+                    I was a successful professional musician in Portland, OR and New Orleans, LA 
+                    from 2010 to 2021 but Covid-19 has caused me to shift my focus and pursue
+                    a career in computer science. I look forward to having two passions in my 
+                    life!
+                </p>
             </div>
-            <div class="row home-row">
-                <div class="col-lg-6 col-item">
-                    <h3>With Sturgill Simpson on SNL</h3>
-                    <iframe class="video" src="https://www.youtube.com/embed/pnDALxS7l_0" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>   
-                <div class="col-lg-6 col-item">
-                    <h3>Bagworm - Snotty Nose</h3>
-                    <iframe class="video" src="https://www.youtube.com/embed/jQYp6cbZhfw" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                </div>   
+
+            <div class="home-section-header">
+                <h1>PORTFOLIO</h1>
             </div>
-            <div class="container">
-                <div class="row more-links">
-                    <div class="col-lg-6">
-                        <h3><a href="./pages/projects.html">More Projects here!</a></h3>
+
+            <div class="portfolio home-section-container">
+                <div  class="portfolio-project-container">
+                    <div id="bookeaterRow" class="portfolio-project-row">
+                        <div>
+                            <img class="portfolio-gif" src="./images/bookeater-demo.gif" />
+                        </div>
+                        <div>
+                            <h1>BookEater</h1>
+                            <h3>What's your taste in books?</h3>
+                            <p class="about-project-text">React SPA with a Node.js/Express/MySQL backend for keeping track of books you've read (or eaten).</p>
+                            <p><a href="https://www.bookeater.org" target="_blank">bookeater.org</a></p>
+                            <p><a href="https://github.com/jonramm/BookEater" target="_blank">GitHub repository</a></p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h3><a href="./pages/music.html">More Music Here!</a></h3>
+
+                    <hr class="book-show-line">
+
+                    <div id="showboatRow" class="portfolio-project-row">
+                        <div>
+                            <h1>ShowBoat</h1>
+                            <p class="about-project-text">CS361-Software Development portfolio project. Desktop app for searching band tour dates. Built with Python and PyQt5, using a custom Python/Flask microservices REST API. </p>
+                            <p><a href="https://github.com/jonramm/ShowBoat" target="_blank">GitHub repository</a></p>
+                        </div>
+                        <div>
+                            <img id="showboat-gif" class="portfolio-gif" src="./images/showboat-demo.gif" />
+                        </div>
                     </div>
+
+                    <hr class="show-hop-line">
+
+                    <div id="hophubRow" class="portfolio-project-row">
+                        <div>
+                            <img class="portfolio-gif" src="./images/hophub-demo.gif" />
+                        </div>
+                        <div>
+                            <h1>HopHub</h1>
+                            <p><strong>Winter 2022 Oregon State University Hackathon Submission - Second place overall 🥈</strong></p>
+                            <p class="about-project-text">React SPA with Node.js/Express backend for searching breweries by city and state. </p>
+                            <p><a href="https://www.thehophub.com" target="_blank">thehophub.com</a></p>
+                            <p><a href="https://github.com/jonramm/Beaverhacks-Winter-2022" target="_blank">GitHub repository</a></p>
+                        </div>
+                    </div>
+
+                    <hr class="hop-cat-line">
+
+                    <div id="icpRow" class="portfolio-project-row">
+                        <div>
+                            <h1>Instant Cat Pods</h1>
+                            <p class="about-project-text">CS340-Databases portfolio project. React SPA with a Node.js/Express/MySQL backend. </p>
+                            <p><a href="https://github.com/jonramm/InstantCatPods" target="_blank">GitHub repository</a></p>
+                        </div>
+                        <div>
+                            <img id="showboat-gif" class="portfolio-gif" src="./images/icp-demo.gif" />
+                        </div>
+                    </div>
+
+                    <hr class="cat-jon-line">
+
+                    <div id="jonRow" class="portfolio-project-row">
+                        <div>
+                            <img class="portfolio-gif" src="./images/bone-demo.gif" />
+                        </div>
+                        <div>
+                            <h1>jonramm.com</h1>
+                            <p class="about-project-text">Personal website built with HTML and CSS. Virtual
+                                trombone built with JavaScript and jQuery.
+                            </p>
+                            <p><a href="https://github.com/jonramm/jonramm.github.io" target="_blank">GitHub repository</a></p>
+                        </div>
+                    </div>
+
+                    <hr class="jon-platform-line">
+
+                    <div id="platformRow" class="portfolio-project-row">
+                        <div>
+                            <h1>Someday My Cat Will Surely Eat Me</h1>
+                            <p><strong>Summer 2021 Oregon State University Hackathon Submission - Third place overall 🥉</strong></p>
+                            <p class="about-project-text">Pygame platformer, with original music and sound effects.</p>
+                            <p><a href="https://github.com/jonramm/Summer21_Hackathon" target="_blank">GitHub repository</a></p>
+                        </div>
+                        <div>
+                            <img id="cat-gif" class="portfolio-gif" src="./images/cat-demo.gif" />
+                        </div>
+                    </div>
+
+                    <hr class="platform-hangman-line">
+
+                    <div class="portfolio-project-row">
+                        <div>
+                            <img id="hangman-gif" class="portfolio-gif" src="./images/hangman-demo.gif" />
+                        </div>
+                        <div>
+                            <h1>Hangman</h1>
+                            <p class="about-project-text">Command line hangman game built with Python.</p>
+                            <p><a href="https://github.com/jonramm/Hangman" target="_blank">GitHub repository</a></p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             
