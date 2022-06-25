@@ -21,6 +21,10 @@ h1.interests {
     font-size: 4rem;
 }
 
+h1.project-title {
+    font-size: 3.5rem;
+}
+
 h2.about-me-text {
     font-size: 3rem;
     line-height: 1;
@@ -30,7 +34,7 @@ h3 {
     font-size: 3rem;
 }
 
-h3.about-me-text {
+h3.section-header {
     font-size: 1.5rem;
 }
 
@@ -42,6 +46,15 @@ p {
 hr {
     opacity: 1;
     margin: 0
+}
+
+a.project-link {
+    color: white;
+    text-decoration: none;
+}
+
+a.project-link:hover {
+    color: #ef838a;
 }
 
 /* Title */
@@ -129,6 +142,10 @@ hr {
     color: white;
 }
 
+#aboutAnchor {
+    top: -240px;
+}
+
 .about-row {
     display: flex;
     margin: 0 5% 0 10%;
@@ -191,12 +208,35 @@ hr {
     margin: 5% 0 0 0;
 }
 
+.portfolio-header {
+    background-image: url('./images/black-swatch.png');
+    background-size: cover;
+    height: 200px;
+}
+
+.portfolio.home-section-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portfolioHeader {
+    position: relative;
+    top: 100px;
+    left: 150px;
+    text-align: left;
+}
+
 .portfolio-project-container {
     display: flex;
     flex-direction: column;
 }
 
 .portfolio-project-row {
+    /* background-image: url('./images/white-swatch.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-around;
@@ -205,10 +245,22 @@ hr {
     padding: 5%;
 }
 
+.link-row {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
 .anchor {
     display: block;
     position: relative;
     visibility: hidden;
+}
+
+.section-header-text {
+    font-size: 1.2rem;
+    margin: 0 5% 0 5%;
+    line-height: 1.5;
 }
 
 #bookeaterRow {
@@ -271,7 +323,7 @@ hr {
 }
 
 .portfolio-gif {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
@@ -369,7 +421,8 @@ iframe {
 }
 
 .bookeater-gif {
-    width: 100%;
+    width: 30%;
+    height: auto;
 }
 
 /* Music Page */
