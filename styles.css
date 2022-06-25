@@ -355,6 +355,12 @@ iframe {
     height: 315px;
 }
 
+/* Skills */
+
+.skill-icon {
+    font-size: 4rem;
+}
+
 /* Footer */
 
 #footer {
