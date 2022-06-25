@@ -6,11 +6,18 @@ $(".site").mouseover(()=> {
 const interests = ["basketball encyclopedia.", "brewery enthusiast.", "jazz lover.", "cat dad.", "dog father.", "cyclist."]
 const interestsLength = interests.length
 const interestsDiv = document.getElementById("rotatingInterests");
-const inst = setInterval(setInterest, 2000)
+const inst = setInterval(setInterest, 1500)
+
+let index = 0
 
 function setInterest() {
-    const index = (Math.floor((Math.random()*interestsLength)))
+    console.log(index)
     interestsDiv.innerHTML = interests[index]
+    if (index === interestsLength-1) {
+        index = 0
+    } else {
+        index ++
+    }
 }
 
 
