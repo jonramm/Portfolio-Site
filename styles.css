@@ -523,7 +523,9 @@ iframe {
 
 @media screen and (max-width: 600px) {
     .title-background {
-        display: none;
+        background-image: none;
+        background-color: black;
+        height: auto;
     }
     iframe {
         width: 280px;
@@ -532,6 +534,37 @@ iframe {
     .resume-img {
         height: auto;
         width: 100%;
+    }
+    .portfolio-project-row {
+        flex-wrap: wrap;
+    }
+    .about-row {
+        flex-wrap: wrap;
+    }
+    .name-container {
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        padding: 2%;
+    }
+    .interests-container {
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        padding: 2%;
+    }
+    .about-row {
+        display: flex;
+        margin: 0;
+        text-align: center;
+        gap: 3%;
+        position: relative;
+        top: 0;
+        padding: 2%;
     }
 }
 
