@@ -3,18 +3,25 @@ html, body {
 }
 
 body {
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Palatino', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #687776;
 }
 
 h1 {
     font-size: 2.5rem;
-    font-weight: bold;
+}
+
+h1.name {
+    font-size: 5rem;
+}
+
+h1.interests {
+    font-size: 4rem;
 }
 
 h2 {
-    font-family: 'Archivo Black';
     padding-bottom: 30px;
 }
 
@@ -47,13 +54,11 @@ hr {
 .navbar {
     background-color: rgb(0, 0, 0, 0.8);
     margin: 0;
-    padding: 10px 10% 10px;
-    border-bottom: 6px solid yellowgreen;
+    padding: 5px 2% 5px;
     width: 100%;
     position: fixed;
     top: 0;
 }
-
 
 .nav-item {
     margin-left: 1rem;
@@ -61,7 +66,13 @@ hr {
 }
 
 .nav-link {
-    font-size: .95rem;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color:#ef838a;
 }
 
 .site {
@@ -70,24 +81,35 @@ hr {
 }
 
 .title-background {
-    background-image: url("./images/cool-jon.jpg");
+    background-image: url("./images/jon-angle-flowers.png");
     background-size: cover;
     border-top: 40px solid black;
-    height: 700px;
-    border-bottom: 12px solid black;
+    height: 1400px;
+    /* border-bottom: 12px solid black; */
 }
 
 .name-container {
-    text-align: center;
     position: relative;
-    top: 100px;
-    left: 100px;
+    top: 35px;
     width: 40%;
+    margin-left: 4%;
+}
+
+.interests-container {
+    position: relative;
+    top: 600px;
+    width: 150%;
+    margin-left: 70%;
+    text-align: right;
+}
+
+#rotatingInterests {
+    color: #6e9c86;
 }
 
 .links {
     font-size: 1.5rem;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .icons {
@@ -97,8 +119,9 @@ hr {
 /* Home Content */
 
 #home-content {
-    background-color: white;
+    background-color: #687776;
     text-align: center;
+    color: white;
 }
 
 .about-me-text {
