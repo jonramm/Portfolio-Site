@@ -458,6 +458,12 @@ iframe {
     left: -200px;
 }
 
+.working-on-container-when-small {
+    display: none;
+    width: 80%;
+    height: auto;
+}
+
 .skills-row {
     display: flex;
     justify-content: center;
@@ -740,6 +746,70 @@ iframe {
     .portfolio-header {
         background-image: none;
     }
+    .left-plant-image {
+        display: none;
+    }
+    .skill-icon {
+        font-size: 4rem;
+    }
+    .skills-container {
+        display: inline-block;
+        width: 100%;
+        margin: 10%;
+        position: relative;
+        top: 0;
+    }
+    .working-on-container {
+        display: none;
+    }
+    .working-on-container-when-small {
+        display: block;
+    }
+    p.blurb {
+        font-size: 1rem;
+    }
+    .skills {
+        margin-bottom: 0;
+    }
+    .contact-blurb {
+        top: 0;
+    }
+    .game-container {
+        display: none;
+    }
+    .project-left-item {
+        display: flex;
+        flex-grow: 2;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .project-right-item {
+        display: flex;
+        flex: 0 1 90%; 
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+    .bookeater-logo {
+        width: 50%;
+    }
+    .showboat-image {
+        width: 50%;
+    }
+    .secondary-project-row {
+        flex-wrap: wrap;
+    }
+    .secondary-project-image {
+        width: 40%;
+    }
+    .secondary-project-column {
+        align-items: center;
+        text-align: center;
+    }
+    #gameLink {
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
