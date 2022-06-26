@@ -19,6 +19,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/80cbadf773.js" crossorigin="anonymous"></script>
 
@@ -203,7 +207,7 @@
                 <div class="portfolio-section-container">
                     <div class="secondary-project-row">
                         <!-- INSTANT CAT PODS -->
-                        <div>
+                        <div class="secondary-project-column">
                             <img class="secondary-project-image" src="./images/catPod.png" />
                             <p class="about-secondary-project-text">Instant Cat Pods</p>
                             <p class="about-secondary-project-text">CS340-Databases portfolio project.
@@ -212,18 +216,20 @@
                                 target="_blank">repo</a>
                         </div>
                         <!-- JONRAMM.COM -->
-                        <div>
+                        <div class="secondary-project-column">
                             <img class="secondary-project-image" src="./images/laptopCircle.png" />
                             <p class="about-secondary-project-text">jonramm.com</p>
                             <p class="about-secondary-project-text">Personal website built with HTML and CSS. Virtual
                                 trombone built with JavaScript and jQuery.
                             </p>
-                            <a class="project-link" href="https://www.jonramm.com" target="_blank">visit</a>
-                            <a class="project-link" href="https://github.com/jonramm/jonramm.github.io"
+                            <div class="secondary-project-link-row">
+                                <a class="project-link" href="https://www.jonramm.com" target="_blank">visit</a>
+                                <a class="project-link" href="https://github.com/jonramm/jonramm.github.io"
                                 target="_blank">repo</a>
+                            </div>
                         </div>
                         <!-- SOMEDAY MY CAT WILL SURELY EAT ME -->
-                        <div>
+                        <div class="secondary-project-column">
                             <img class="secondary-project-image" src="./images/catCircle.png" />
                             <p class="about-secondary-project-text">Someday My Cat Will Surely Eat Me</p>
                             <p class="about-secondary-project-text">Winter 2022 Oregon State University Hackathon
@@ -233,7 +239,7 @@
                                 target="_blank">repo</a>
                         </div>
                         <!-- HANGMAN -->
-                        <div>
+                        <div class="secondary-project-column">
                             <img class="secondary-project-image" src="./images/hangmanCircle.png" />
                             <p class="about-secondary-project-text">Hangman</p>
                             <p class="about-secondary-project-text">Command line hangman game built with Python.</p>
@@ -242,6 +248,8 @@
                     </div>
                 </div>
             </div>
+            <img class="bottom-swatch" src="./images/bottomSwatch.png" />
+
         </div>
 
         <div id="skillsAnchor" class="anchor"></div>
@@ -249,21 +257,34 @@
             <div>
                 <h3 class="section-header" id="skillsHeader">SKILLS & TOOLS</h3>
             </div>
-            <div class="skills-row">
-                <i class="devicon-python-plain-wordmark skill-icon"></i>
-                <i class="devicon-javascript-plain colored skill-icon"></i>
-                <i class="devicon-html5-plain-wordmark colored skill-icon"></i>
-                <i class="devicon-css3-plain-wordmark colored skill-icon"></i>
-                <i class="devicon-mysql-plain-wordmark skill-icon"></i>
-                <i class="devicon-react-original-wordmark colored skill-icon"></i>
-                <i class="devicon-express-original-wordmark skill-icon"></i>
-                <i class="devicon-nodejs-plain colored skill-icon"></i>
-                <i class="devicon-flask-original-wordmark skill-icon"></i>
+            <img class="left-plant-image" src="./images/leftPlant.png">
+            <div class="skills-container">
+                <div class="skills-row">
+                    <i class="devicon-python-plain-wordmark skill-icon"></i>
+                    <i class="devicon-javascript-plain colored skill-icon"></i>
+                    <i class="devicon-html5-plain-wordmark colored skill-icon"></i>
+                    <i class="devicon-css3-plain-wordmark colored skill-icon"></i>
+                    <i class="devicon-mysql-plain-wordmark skill-icon"></i>
+                    <i class="devicon-react-original-wordmark colored skill-icon"></i>
+                    <i class="devicon-express-original-wordmark skill-icon"></i>
+                    <i class="devicon-nodejs-plain colored skill-icon"></i>
+                    <i class="devicon-flask-original-wordmark skill-icon"></i>
+                    <div class="working-on-container">
+                        <h3 class="section-header">CURRENTLY WORKING ON:</h3>
+                        <p>Improving my skills in backend development, maintaining and upgrading
+                            my app BookEater, and learning low-level programming in C/C++. Having
+                            fun exploring the world of embedded systems with my new STM32 
+                            microcontroller.
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
         <div id="musicAnchor" class="anchor"></div>
-        <div class="music">
+        <img class="top-swatch" src="./images/black-swatch-cropped.png" />
+        <div id="musicSection">
             <div>
                 <h3 class="section-header" id="musicHeader">MUSIC</h3>
             </div>
@@ -276,13 +297,52 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="..." alt="First slide">
+                            <div class="video-container">
+                                <h3>Bagworm - Snotty Nose</h3>
+                                <iframe class="video" src="https://www.youtube.com/embed/jQYp6cbZhfw" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Second slide">
+                            <div class="video-container">
+                                <h3>With Sturgill Simpson on SNL</h3>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/pnDALxS7l_0" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="..." alt="Third slide">
+                            <div class="video-container">
+                                <h3>With Magnetic Ear at Gumbo Fest</h3>
+                                <iframe src="https://www.youtube.com/embed/ur9vGGqJVAo" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <h3>With Alexey Marti at WWOZ</h3>
+                                <iframe src="https://www.youtube.com/embed/otnfWe1syJg" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <h3>Royal Roses on Frenchmen St</h3>
+                                <iframe src="https://www.youtube.com/embed/a01bR9N6RvM" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <h3>Bagworm - The Touch of a Fairy</h3>
+                                <iframe src="https://www.youtube.com/embed/INSPb1J7ztQ" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

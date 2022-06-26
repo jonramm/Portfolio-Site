@@ -46,7 +46,6 @@ const inst = setInterval(setInterest, 1500)
 let index = 0
 
 function setInterest() {
-    console.log(index)
     interestsDiv.innerHTML = interests[index]
     if (index === interestsLength-1) {
         index = 0

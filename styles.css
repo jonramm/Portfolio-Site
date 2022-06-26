@@ -144,7 +144,7 @@ a.project-link:hover {
 
 #home-content {
     background-color: #687776;
-    text-align: center;
+    /* text-align: center; */
     color: white;
 }
 
@@ -175,6 +175,16 @@ a.project-link:hover {
     font-size: 1.2rem;
     margin: 0 5% 0 5%;
     line-height: 1.5;
+}
+
+.bottom-swatch {
+    width: 100%;
+    height: auto;
+}
+
+.top-swatch {
+    width: 100%;
+    height: auto;
 }
 
 .blurb {
@@ -233,9 +243,12 @@ a.project-link:hover {
     height: 200px;
 }
 
+#portfolioAnchor {
+    top: 20px;
+}
+
 #portfolioSection {
     background-color: black;
-    padding-bottom: 80px;
 }
 
 #portfolioHeader {
@@ -253,17 +266,29 @@ a.project-link:hover {
 .portfolio-project-row {
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     margin-bottom: 10%;
+    align-items: stretch;
 }
 
 .secondary-project-row {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 10%;
     gap: 5%;
     margin: 0 5% 0 5%;
+}
+
+.secondary-project-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondary-project-link-row {
+    display: flex;
+    justify-content: center;
 }
 
 .project-flex-item {
@@ -399,22 +424,64 @@ iframe {
 
 /* Skills */
 
+#skillsAnchor {
+    top: -50px;
+}
+
 #skillsHeader {
     text-align: left;
-    margin-bottom: 5%;
+    margin-left: 100px;
+    margin-top: 2%;
+}
+
+.skills {
+    margin-bottom: -200px;
+}
+
+.left-plant-image {
+    width: 30%;
+    height: auto;
+}
+
+.skills-container {
+    display: inline-block;
+    width: 50%;
+    margin-left: 12%;
+    margin-right: auto;
+    position: relative;
+    top: -300px;
+}
+
+.working-on-container {
+    position: relative;
+    top: 20px;
+    left: -200px;
 }
 
 .skills-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:-10px;
+    gap: 4%;
 }
 
-.skills {
-    padding: 10%;
+.skills-row>* {
+    flex: 1 1 160px;
+    margin: 20px;
 }
 
 .skill-icon {
-    font-size: 4rem;
+    font-size: 8rem;
+}
+
+/* Music */
+
+#musicHeader {
+    text-align: left;
+    position: relative;
+    top: -120px;
+    left: 140px;
 }
 
 /* Footer */
@@ -491,6 +558,12 @@ iframe {
 }
 
 /* Music Page */
+
+#musicSection {
+    background-color: black;
+    padding: 20px 0 80px 0;
+    text-align: center;
+}
 
 #video-reel {
     background-color: rgb(153 205 50 / 13%);
