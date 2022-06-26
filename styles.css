@@ -50,12 +50,17 @@ hr {
 }
 
 a.project-link {
-    color: white;
+    color: black;
     text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 8% 0 8%;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
 }
 
 a.project-link:hover {
-    color: #ef838a;
+    background-color: #ef838a;
 }
 
 /* Title */
@@ -172,8 +177,12 @@ a.project-link:hover {
     text-justify: inter-word;
 }
 
+.project-tagline {
+    font-size: 1.3rem;
+}
+
 .about-project-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .home-row {
@@ -215,11 +224,8 @@ a.project-link:hover {
     height: 200px;
 }
 
-.portfolio.home-section-container {
+#portfolioSection {
     background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #portfolioHeader {
@@ -235,20 +241,30 @@ a.project-link:hover {
 }
 
 .portfolio-project-row {
-    /* background-image: url('./images/white-swatch.png');
-    background-size: cover;
-    background-repeat: no-repeat; */
     display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
 }
 
 .project-flex-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 2 1 auto;
+}
+
+.project-left-item {
+    display: flex;
+    flex-grow: 2;
+    margin-left: 5%;
+    margin-right: 2.5%;
+}
+
+.project-right-item {
+    display: flex;
+    flex: 0 1 35%; 
+    margin-right: 5%;
+    margin-left: 2.5%;
 }
 
 .about-project {
@@ -333,7 +349,7 @@ a.project-link:hover {
 }
 
 .portfolio-gif {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
@@ -431,7 +447,7 @@ iframe {
 }
 
 .showboat-image {
-    width: 50%;
+    width: 70%;
     height: auto;
 }
 
@@ -458,6 +474,11 @@ iframe {
 
 .bookeater-gif {
     width: 30%;
+    height: auto;
+}
+
+.bookeater-logo {
+    width: 80%;
     height: auto;
 }
 
