@@ -498,7 +498,6 @@ iframe {
 
 .footer-row {
     background-color: black;
-    border-top: 6px solid yellowgreen;
     padding: 2% 0 1%;
 }
 
@@ -645,14 +644,15 @@ iframe {
     padding: 7% 5%;
 }
 
-#game {
-    background-color: rgba(153, 205, 50, 0.125);
+#gamesSection {
+    background-color: black;
     text-align: center;
     height: fit-content;
     flex: 1 0 auto;
 }
 
 .note-box {
+    color: black;
     background-color: rgb(212, 212, 212);
     border: 2px solid black;
     border-radius: 20%;
