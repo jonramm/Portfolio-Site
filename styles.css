@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -239,10 +240,19 @@ a.project-link:hover {
     background-repeat: no-repeat; */
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.project-flex-item {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5%;
-    padding: 5%;
+    flex: 2 1 auto;
+}
+
+.about-project {
+    margin-right: 8%;
 }
 
 .link-row {
@@ -357,6 +367,20 @@ iframe {
 
 /* Skills */
 
+#skillsHeader {
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills {
+    padding: 10%;
+}
+
 .skill-icon {
     font-size: 4rem;
 }
@@ -400,8 +424,14 @@ iframe {
     height: auto;
 }
 
+.bookeater-header-image {
+    width: 30%;
+    height: auto;
+    margin-bottom: 3%;
+}
+
 .showboat-image {
-    width: 440px;
+    width: 50%;
     height: auto;
 }
 
@@ -571,6 +601,12 @@ iframe {
         position: relative;
         top: 0;
         padding: 2%;
+    }
+    .skills-row {
+        flex-wrap: wrap;
+    }
+    .portfolio-header {
+        background-image: none;
     }
 }
 
