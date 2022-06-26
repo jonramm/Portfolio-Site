@@ -243,8 +243,8 @@ a.project-link:hover {
 .portfolio-project-row {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 5%;
+    /* align-items: center; */
+    margin-bottom: 10%;
 }
 
 .project-flex-item {
@@ -256,6 +256,13 @@ a.project-link:hover {
 .project-left-item {
     display: flex;
     flex-grow: 2;
+    margin-left: 5%;
+    margin-right: 2.5%;
+}
+
+.project-left-item-showboat {
+    flex: 0 1 100%;
+    display: flex;
     margin-left: 5%;
     margin-right: 2.5%;
 }
@@ -447,8 +454,10 @@ iframe {
 }
 
 .showboat-image {
-    width: 70%;
+    width: 90%;
     height: auto;
+    position: relative;
+    right: -20px;
 }
 
 .hangman {
