@@ -65,11 +65,6 @@ a.project-link:hover {
 
 /* Title */
 
-#title {
-    
-    color: white;
-}
-
 #nav {
     color: white;
 }
@@ -105,26 +100,43 @@ a.project-link:hover {
 }
 
 .title-background {
-    background-image: url("./images/jon-angle-flowers.png");
+    /* background-image: url("./images/jon-angle-flowers.png");
     background-size: cover;
     border-top: 40px solid black;
-    height: 1400px;
-    /* border-bottom: 12px solid black; */
+    height: 1400px; */
+
+    position: relative;
+   
+}
+
+.title-image {
+    width: 100%;
+    height: auto;
 }
 
 .name-container {
-    position: relative;
+    color: white;
+    /* position: relative;
     top: 35px;
     width: 40%;
-    margin-left: 4%;
+    margin-left: 4%; */
+
+    position: absolute;
+    top: 80px;
+    left: 80px;
 }
 
 .interests-container {
-    position: relative;
+    /* position: relative;
     top: 600px;
     width: 150%;
-    margin-left: 70%;
-    text-align: right;
+    margin-left: 70%; */
+    /* text-align: right; */
+
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
 }
 
 #rotatingInterests {
@@ -718,16 +730,19 @@ iframe {
     .name-container {
         position: relative;
         top: 0;
+        left: 0;
         width: 100%;
-        margin-left: 0;
         text-align: center;
-        padding: 2%;
+        padding: 8% 2%;
+    }
+    .title-image {
+        display: none;
     }
     .interests-container {
         position: relative;
         top: 0;
+        left: 0;
         width: 100%;
-        margin-left: 0;
         text-align: center;
         padding: 2%;
     }
@@ -816,5 +831,18 @@ iframe {
     iframe {
         width: 420px;
         height: 236px;
+    }
+    /* .name-container {
+        left: 0;
+    }
+    .interests-container {
+        left: 0;
+    } */
+    h1.name {
+        font-size: 3rem;
+    }
+    
+    h1.interests {
+        font-size: 2rem;
     }
 }
