@@ -161,7 +161,7 @@ a.project-link:hover {
 }
 
 #aboutAnchor {
-    top: -240px;
+    top: -450px;
 }
 
 .about-row {
@@ -170,7 +170,8 @@ a.project-link:hover {
     text-align: left;
     gap: 3%;
     position: relative;
-    top: -180px;
+    top: -380px;
+    height: 200px;
 }
 
 .laptop-image {
@@ -724,8 +725,11 @@ iframe {
     .portfolio-project-row {
         flex-wrap: wrap;
     }
-    .about-row {
-        flex-wrap: wrap;
+    #portfolioHeader {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
     }
     .name-container {
         position: relative;
@@ -754,12 +758,23 @@ iframe {
         position: relative;
         top: 0;
         padding: 2%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .laptop-image {
+        display: none;
     }
     .skills-row {
         flex-wrap: wrap;
     }
+    #skillsHeader {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
     .portfolio-header {
         background-image: none;
+        height: 100%;
     }
     .left-plant-image {
         display: none;
@@ -832,17 +847,50 @@ iframe {
         width: 420px;
         height: 236px;
     }
-    /* .name-container {
-        left: 0;
+    .about-row {
+        display: flex;
+        margin: 0;
+        text-align: center;
+        gap: 3%;
+        position: relative;
+        top: 0;
+        padding: 2%;
+        height: 100%;
+        flex-wrap: wrap;
     }
-    .interests-container {
-        left: 0;
-    } */
+    .laptop-image {
+        display: none;
+    }
     h1.name {
         font-size: 3rem;
     }
     
     h1.interests {
         font-size: 2rem;
+    }
+    .skill-icon {
+        font-size: 4rem;
+    }
+    .skills-container {
+        display: inline-block;
+        width: 100%;
+        margin: 10%;
+        position: relative;
+        top: 0;
+    }
+    .working-on-container {
+        display: none;
+    }
+    .working-on-container-when-small {
+        display: block;
+    }
+    p.blurb {
+        font-size: 1rem;
+    }
+    .skills {
+        margin-bottom: 0;
+    }
+    .left-plant-image {
+        display: none;
     }
 }
