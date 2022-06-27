@@ -161,7 +161,7 @@ a.project-link:hover {
 }
 
 #aboutAnchor {
-    top: -450px;
+    top: -350px;
 }
 
 .about-row {
@@ -170,8 +170,8 @@ a.project-link:hover {
     text-align: left;
     gap: 3%;
     position: relative;
-    top: -380px;
-    height: 200px;
+    top: -280px;
+    height: 380px;
 }
 
 .laptop-image {
