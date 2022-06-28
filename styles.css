@@ -693,6 +693,9 @@ iframe {
 
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
     .title-background {
         background-image: none;
         background-color: black;
@@ -702,6 +705,11 @@ iframe {
         width: 280px;
         height: 157px;
     }
+
+    h3.youtube-video-title {
+        font-size: 1rem;
+    }
+
     .resume-img {
         height: auto;
         width: 100%;
@@ -721,7 +729,7 @@ iframe {
         left: 0;
         width: 100%;
         text-align: center;
-        padding: 16% 2%;
+        padding: 8% 2%;
     }
     .title-image {
         display: none;
@@ -732,7 +740,7 @@ iframe {
         left: 0;
         width: 100%;
         text-align: center;
-        padding: 2%;
+        padding: 2% 2% 10% 2%;
     }
     .about-row {
         display: flex;
@@ -832,6 +840,36 @@ iframe {
         align-items: center;
         text-align: center;
     }
+
+    .contact-blurb {
+        margin-left: 0;
+        display: inline-block;
+        position: relative;
+        top: 0;
+        text-align: center;
+    }
+
+    #contactHeader {
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    #musicHeader {
+        text-align: center;
+        left: 0;
+        top: -30px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .profile-image {
+        width: 100%;
+        padding: 0 30%;
+    }
+
     #gameLink {
         display: none;
     }
@@ -850,7 +888,7 @@ iframe {
         gap: 3%;
         position: relative;
         top: 0;
-        padding: 2%;
+        padding: 2% 2% 8% 2%;
         height: 100%;
         flex-wrap: wrap;
     }
