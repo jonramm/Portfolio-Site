@@ -100,13 +100,7 @@ a.project-link:hover {
 }
 
 .title-background {
-    /* background-image: url("./images/jon-angle-flowers.png");
-    background-size: cover;
-    border-top: 40px solid black;
-    height: 1400px; */
-
     position: relative;
-   
 }
 
 .title-image {
@@ -116,27 +110,17 @@ a.project-link:hover {
 
 .name-container {
     color: white;
-    /* position: relative;
-    top: 35px;
-    width: 40%;
-    margin-left: 4%; */
-
     position: absolute;
     top: 80px;
     left: 80px;
 }
 
 .interests-container {
-    /* position: relative;
-    top: 600px;
-    width: 150%;
-    margin-left: 70%; */
-    /* text-align: right; */
-
     color: white;
     position: absolute;
     bottom: 40%;
-    left: 50%;
+    left: 40%;
+    text-align: center;
 }
 
 #rotatingInterests {
@@ -709,6 +693,9 @@ iframe {
 
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
     .title-background {
         background-image: none;
         background-color: black;
@@ -718,6 +705,11 @@ iframe {
         width: 280px;
         height: 157px;
     }
+
+    h3.youtube-video-title {
+        font-size: 1rem;
+    }
+
     .resume-img {
         height: auto;
         width: 100%;
@@ -748,7 +740,7 @@ iframe {
         left: 0;
         width: 100%;
         text-align: center;
-        padding: 2%;
+        padding: 2% 2% 10% 2%;
     }
     .about-row {
         display: flex;
@@ -782,9 +774,21 @@ iframe {
     .skill-icon {
         font-size: 4rem;
     }
+    .skills-row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:-10px;
+        gap: 4%;
+    }
+    
+    .skills-row>* {
+        flex: 1 1 80px;
+        margin: 0;
+    }
     .skills-container {
-        display: inline-block;
-        width: 100%;
+        display: flex;
+        width: 80%;
         margin: 10%;
         position: relative;
         top: 0;
@@ -821,10 +825,10 @@ iframe {
         text-align: center;
     }
     .bookeater-logo {
-        width: 50%;
+        width: 40%;
     }
     .showboat-image {
-        width: 50%;
+        width: 40%;
     }
     .secondary-project-row {
         flex-wrap: wrap;
@@ -836,6 +840,36 @@ iframe {
         align-items: center;
         text-align: center;
     }
+
+    .contact-blurb {
+        margin-left: 0;
+        display: inline-block;
+        position: relative;
+        top: 0;
+        text-align: center;
+    }
+
+    #contactHeader {
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    #musicHeader {
+        text-align: center;
+        left: 0;
+        top: -30px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .profile-image {
+        width: 100%;
+        padding: 0 30%;
+    }
+
     #gameLink {
         display: none;
     }
@@ -854,7 +888,7 @@ iframe {
         gap: 3%;
         position: relative;
         top: 0;
-        padding: 2%;
+        padding: 2% 2% 8% 2%;
         height: 100%;
         flex-wrap: wrap;
     }
@@ -882,13 +916,23 @@ iframe {
         display: none;
     }
     .working-on-container-when-small {
+        margin-top: 15%;
         display: block;
+        text-align: center;
     }
     p.blurb {
         font-size: 1rem;
     }
     .skills {
         margin-bottom: 0;
+    }
+    .skills-container {
+        display: inline-block;
+        width: 80%;
+        margin: 10%;
+        position: relative;
+        top: 0;
+        text-align: center;
     }
     .left-plant-image {
         display: none;

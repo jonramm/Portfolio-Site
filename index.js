@@ -30,6 +30,8 @@ $(document).ready(function () {
     });
 });
 
+// rotating interests
+
 const interests = [
                     "basketball encyclopedia.", 
                     "brewery enthusiast.", 
@@ -41,9 +43,9 @@ const interests = [
                 ]
 const interestsLength = interests.length
 const interestsDiv = document.getElementById("rotatingInterests");
+interestsDiv.innerHTML = interests[0]
 const inst = setInterval(setInterest, 1500)
-
-let index = 0
+let index = 1
 
 function setInterest() {
     interestsDiv.innerHTML = interests[index]
